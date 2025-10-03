@@ -1,0 +1,195 @@
+/* Welcome Section Styles */
+.welcome {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 30%, #1a1a1a 70%, #000 100%);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 215, 0, 0.08) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.welcome-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f5f5dc;
+  margin-bottom: 60px;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3px;
+}
+
+.welcome-content {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.welcome-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.welcome-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auction-button {
+  background: #f5f5dc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(245, 245, 220, 0.2);
+}
+
+.auction-button:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(245, 245, 220, 0.3);
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.auction-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .welcome {
+    padding: 80px 0;
+  }
+  
+  .welcome-title {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .welcome-content {
+    margin-bottom: 50px;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 60px 0;
+  }
+  
+  .welcome-container {
+    padding: 0 15px;
+  }
+  
+  .welcome-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .welcome-content {
+    margin-bottom: 40px;
+  }
+  
+  .welcome-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  
+  .auction-button {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome {
+    padding: 50px 0;
+  }
+  
+  .welcome-container {
+    padding: 0 10px;
+  }
+  
+  .welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .welcome-content {
+    margin-bottom: 30px;
+  }
+  
+  .welcome-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .auction-button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+  
+  .arrow-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-text {
+    font-size: 0.85rem;
+  }
+  
+  .auction-button {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+}

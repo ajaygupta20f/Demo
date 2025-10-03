@@ -1,0 +1,451 @@
+/* Rules Footer Section Styles */
+.rules-footer {
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 30%, #000 70%, #000 100%);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.rules-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(192, 192, 192, 0.1) 0%, transparent 50%);
+  z-index: 1;
+}
+
+.rules-footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.rules-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #f5f5dc;
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.rules-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.rules-logo {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-monogram {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #c0c0c0;
+  text-shadow: 
+    0 0 10px rgba(192, 192, 192, 0.5),
+    0 0 20px rgba(192, 192, 192, 0.3),
+    0 0 30px rgba(192, 192, 192, 0.2);
+}
+
+.c-letter {
+  font-size: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.crown {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  font-size: 20px;
+  color: #ffd700;
+  z-index: 3;
+}
+
+.b-letter {
+  font-size: 60px;
+  margin-left: -10px;
+  z-index: 1;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  color: #c0c0c0;
+  text-shadow: 
+    0 0 10px rgba(192, 192, 192, 0.5),
+    0 0 20px rgba(192, 192, 192, 0.3);
+}
+
+.club-text {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.billionaire-text {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+
+.rules-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  flex: 1;
+}
+
+.rules-column {
+  flex: 1;
+}
+
+.column-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f5dc;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', serif;
+  text-decoration: underline;
+  text-decoration-color: #f5f5dc;
+  text-underline-offset: 8px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 8px 0;
+}
+
+.check-icon {
+  color: #f5f5dc;
+  font-size: 1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .rules-footer {
+    padding: 80px 0;
+  }
+  
+  .rules-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+  
+  .rules-content {
+    gap: 40px;
+  }
+  
+  .rules-columns {
+    gap: 40px;
+  }
+  
+  .logo-monogram {
+    font-size: 40px;
+  }
+  
+  .c-letter, .b-letter {
+    font-size: 50px;
+  }
+  
+  .club-text, .billionaire-text {
+    font-size: 20px;
+  }
+  
+  .column-title {
+    font-size: 1.6rem;
+  }
+  
+  .benefit-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rules-footer {
+    padding: 60px 0;
+  }
+  
+  .rules-footer-container {
+    padding: 0 15px;
+  }
+  
+  .rules-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .rules-content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .rules-logo {
+    order: 1;
+  }
+  
+  .rules-columns {
+    order: 2;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+  }
+  
+  .logo {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .logo-monogram {
+    font-size: 36px;
+  }
+  
+  .c-letter, .b-letter {
+    font-size: 44px;
+  }
+  
+  .crown {
+    font-size: 16px;
+    top: -12px;
+  }
+  
+  .club-text, .billionaire-text {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .column-title {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+  
+  .benefit-item {
+    margin-bottom: 14px;
+  }
+  
+  .benefit-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rules-footer {
+    padding: 50px 0;
+  }
+  
+  .rules-footer-container {
+    padding: 0 10px;
+  }
+  
+  .rules-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .rules-content {
+    gap: 30px;
+  }
+  
+  .rules-columns {
+    gap: 30px;
+  }
+  
+  .logo-monogram {
+    font-size: 32px;
+  }
+  
+  .c-letter, .b-letter {
+    font-size: 40px;
+  }
+  
+  .crown {
+    font-size: 14px;
+    top: -10px;
+  }
+  
+  .club-text, .billionaire-text {
+    font-size: 16px;
+  }
+  
+  .column-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-item {
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+  
+  .check-icon {
+    font-size: 0.9rem;
+  }
+  
+  .benefit-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .rules-title {
+    font-size: 1.8rem;
+  }
+  
+  .logo-monogram {
+    font-size: 28px;
+  }
+  
+  .c-letter, .b-letter {
+    font-size: 36px;
+  }
+  
+  .club-text, .billionaire-text {
+    font-size: 14px;
+  }
+  
+  .column-title {
+    font-size: 1.1rem;
+  }
+  
+  .benefit-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Footer Social Icons */
+.footer-social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-social-link {
+  color: #f5f5dc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.footer-social-link:hover {
+  color: #ffd700;
+  transform: translateY(-3px) scale(1.1);
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #ffd700;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.footer-social-icon {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Footer Social Icons */
+@media (max-width: 1024px) {
+  .footer-social-icons {
+    gap: 15px;
+  }
+  
+  .footer-social-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-social-icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rules-logo {
+    gap: 20px;
+  }
+  
+  .footer-social-icons {
+    gap: 12px;
+  }
+  
+  .footer-social-link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer-social-icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-social-icons {
+    gap: 10px;
+  }
+  
+  .footer-social-link {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-social-icon {
+    font-size: 14px;
+  }
+}
