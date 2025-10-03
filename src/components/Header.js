@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa6';
-import { IoArrowForward, IoClose } from 'react-icons/io5';
-import './Header.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaBars } from "react-icons/fa6";
+import { IoArrowForward, IoClose } from "react-icons/io5";
+import "./Header.css";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,15 +13,14 @@ const Header = () => {
   };
 
   const navigateToSignup = () => {
-    navigate('/signup');
+    navigate("/signup");
     setIsMobileMenuOpen(false);
   };
 
-  // Scroll to top instead of navigating
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // smooth scroll
+      behavior: "smooth",
     });
     setIsMobileMenuOpen(false);
   };
@@ -29,24 +28,20 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-
         {/* Logo */}
         <div className="logo-container">
-          <div 
-            className="logo-text" 
-            onClick={scrollToTop} 
-            style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
+          <div
+            className="logo"
+            onClick={scrollToTop}
+            style={{ cursor: "pointer" }}
           >
-            {/* CB Monogram */}
-            <div className="logo">
-              <div className="logo-monogram">
-                <span className="c-letter">C</span>
-                <span className="b-letter">B</span>
-              </div>
-              <div className="logo-text">
-                <span className="club-text">CLUB</span>
-                <span className="billionaire-text">BILLIONAIRE</span>
-              </div>
+            <div className="logo-monogram">
+              <span className="c-letter">C</span>
+              <span className="b-letter">B</span>
+            </div>
+            <div className="logo-text">
+              <span className="club-text">CLUB</span>
+              <span className="billionaire-text">BILLIONAIRE</span>
             </div>
           </div>
         </div>
@@ -66,7 +61,9 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`mobile-menu ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+      <div
+        className={`mobile-menu ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}
+      >
         <div className="mobile-menu-content">
           <div className="mobile-register-section">
             <button className="mobile-register-btn" onClick={navigateToSignup}>

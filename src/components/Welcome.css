@@ -1,6 +1,6 @@
 /* Welcome Section Styles */
 .welcome {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 30%, #1a1a1a 70%, #000 100%);
+  background: linear-gradient( #1a1a1a 0%, #2a2a2a 30%, #1a1a1a 70%, #000 100%);
   padding: 120px 0;
   position: relative;
   overflow: hidden;

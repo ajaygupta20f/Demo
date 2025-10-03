@@ -10,7 +10,7 @@ import HowItWorks from './components/HowItWorks';
 import RulesFooter from './components/RulesFooter';
 import SignupPage from './components/SignupPage';
 import LoginPage from './components/LoginPage';
-import './App.css';
+ 
 
 function App() {
   return (
